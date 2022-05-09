@@ -1,8 +1,9 @@
 package consensus
 
 import (
-	"github.com/tjfoc/gmsm/sm3"
 	"encoding/hex"
+
+	"github.com/tjfoc/gmsm/sm3"
 )
 
 func Hash(content []byte) string {
@@ -10,4 +11,3 @@ func Hash(content []byte) string {
 	h.Write(content)
 	return hex.EncodeToString(h.Sum(nil))
 }
-

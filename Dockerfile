@@ -8,3 +8,4 @@ RUN go env -w GOPROXY=https://goproxy.cn\
  && go build .
  
 CMD ["./consensusPBFT 0x01"]
+

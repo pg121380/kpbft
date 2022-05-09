@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/bigpicturelabs/consensusPBFT/pbft/consensus"
+	"github.com/yunxiaozhao/simple_pbft/pbft/consensus"
 )
 
 type Node struct {
