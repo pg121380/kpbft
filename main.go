@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/bigpicturelabsinc/consensusPBFT/pbft/network"
+	"github.com/yunxiaozhao/simple_pbft/network"
 )
 
 func main() {
