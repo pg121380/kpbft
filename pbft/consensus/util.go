@@ -1,12 +1,12 @@
 package consensus
 
 import (
-	"crypto/sha256"
+	"github.com/tjfoc/gmsm/sm3"
 	"encoding/hex"
 )
 
 func Hash(content []byte) string {
-	h := sha256.New()
+	h := sm3.New()
 	h.Write(content)
 	return hex.EncodeToString(h.Sum(nil))
 }
