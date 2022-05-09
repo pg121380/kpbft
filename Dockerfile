@@ -6,5 +6,5 @@ ADD . /go/github.com/yunxiaozhao/PBFT
 
 RUN go env -w GOPROXY=https://goproxy.cn\
  && go build .
-
-ENTRYPOINT [ "executable" ]
+ 
+CMD ["./consensusPBFT 0x01"]
